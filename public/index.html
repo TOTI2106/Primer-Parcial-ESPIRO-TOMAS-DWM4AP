@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Pokémon Kanto</title>
+    <link rel="icon" href="img/logo_pokeball_pixel.png">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Pokémon Primera Generación</h1>
+            <p>Una API RESTful con información de los 151 Pokémon originales</p>
+        </header>
+
+        <section>
+            <h2>Bienvenido</h2>
+            <p>Esta API proporciona información detallada sobre los Pokémon de la primera generación (Kanto). Puedes acceder a los datos de Pokémon, sus tipos y realizar diversas operaciones.</p>
+        </section>
+
+        <section>
+            <h2>Endpoints Disponibles</h2>
+            
+            <h3>Autenticación</h3>
+            <div class="endpoint">
+                <strong>POST /api/auth/register</strong> - Registrar nuevo usuario<br>
+                <code>{ "username": "tu_usuario", "password": "tu_contraseña" }</code>
+            </div>
+            <div class="endpoint">
+                <strong>POST /api/auth/login</strong> - Iniciar sesión y obtener token JWT<br>
+                <code>{ "username": "tu_usuario", "password": "tu_contraseña" }</code>
+            </div>
+
+            <h3>Pokémon</h3>
+            <div class="endpoint">
+                <strong>GET /api/pokemon</strong> - Obtener todos los Pokémon (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>GET /api/pokemon/:id</strong> - Obtener un Pokémon por ID (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>POST /api/pokemon</strong> - Crear un nuevo Pokémon (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>PUT /api/pokemon/:id</strong> - Actualizar un Pokémon (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>DELETE /api/pokemon/:id</strong> - Eliminar un Pokémon (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>GET /api/pokemon/name/:name</strong> - Buscar Pokémon por nombre (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>GET /api/pokemon/filter/type?type=electric</strong> - Filtrar Pokémon por tipo (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>GET /api/pokemon/filter/legendary</strong> - Filtrar Pokémon legendarios (requiere autenticación)
+            </div>
+
+            <h3>Tipos</h3>
+            <div class="endpoint">
+                <strong>GET /api/types</strong> - Obtener todos los tipos de Pokémon (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>GET /api/types/:id</strong> - Obtener un tipo por ID (requiere autenticación)
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>Nombre y Apellido:</strong> Tomas Espiro</p>
+            <p><strong>Materia:</strong> Aplicaciones Híbridas</p>
+            <p><strong>Docente:</strong> Jonathan Emanuel Cruz</p>
+            <p><strong>Comisión:</strong> DWM4AP</p>
+        </footer>
+    </div>
+</body>
+</html>
