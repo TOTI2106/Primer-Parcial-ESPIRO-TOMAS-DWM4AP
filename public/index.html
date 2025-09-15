@@ -12,9 +12,11 @@
         <header>
             <h1>API Pokémon Primera Generación</h1>
             <p>Una API RESTful con información de los 151 Pokémon originales</p>
+            
         </header>
 
         <section>
+            <img class="banner_kanto" src="img/800px-Mapa_de_Kanto_LGPE.png" alt="mapa_kanto">
             <h2>Bienvenido</h2>
             <p>Esta API proporciona información detallada sobre los Pokémon de la primera generación (Kanto). Puedes acceder a los datos de Pokémon, sus tipos y realizar diversas operaciones.</p>
         </section>
@@ -38,6 +40,9 @@
             </div>
             <div class="endpoint">
                 <strong>GET /api/pokemon/:id</strong> - Obtener un Pokémon por ID (requiere autenticación)
+            </div>
+            <div class="endpoint">
+                <strong>POST /api/seed</strong> - Transferir la base de datos de todos los tipos por nombre y por ID (requiere autenticación)
             </div>
             <div class="endpoint">
                 <strong>POST /api/pokemon</strong> - Crear un nuevo Pokémon (requiere autenticación)

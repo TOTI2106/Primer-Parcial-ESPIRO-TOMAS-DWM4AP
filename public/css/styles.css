@@ -1,16 +1,11 @@
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
     background-color: #f0f0f0;
     color: #333;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
+.container { 
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -18,21 +13,27 @@ body {
 
 header {
     text-align: center;
-    padding: 20px 0;
+    padding: 20px;
     border-bottom: 2px solid #ffcb05;
-    background-color: #2a75bb;
+    background-color: rgb(197, 22, 22);
     color: white;
     margin-bottom: 20px;
 }
 
+.banner_kanto {
+    height: auto;
+    width: 50%;
+    margin-left: 22%;
+}
+
 h1 {
     color: #ffcb05;
-    text-shadow: 2px 2px 0 #3c5aa6;
+    text-shadow: 2px 2px 0 #000000;
 }
 
 .endpoint {
     background-color: #f8f9fa;
-    border-left: 4px solid #3c5aa6;
+    border-left: 4px solid red;
     padding: 10px 15px;
     margin: 10px 0;
     border-radius: 0 4px 4px 0;
@@ -47,10 +48,10 @@ code {
 
 footer {
     margin-top: 30px;
-    padding: 20px 0;
+    padding: 20px;
     border-top: 2px solid #ffcb05;
     text-align: center;
-    background-color: #2a75bb;
+    background-color: rgb(197, 22, 22);
     color: white;
 }
 
